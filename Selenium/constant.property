@@ -1,0 +1,6 @@
+url=http://seleniumhq.org
+implicitwait=20
+excelpath=D:\Share Folder\AutomationTesting\\abc.xlsx
+e_download=//*[text()='Download']_xpath
+username=
+password=

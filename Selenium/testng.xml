@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+ 
+  <test name="dependsOnExample">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="day8.DependsExample"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ 
+   <test name="dependsOnExample1">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="day8.DependsExample"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ 
+    <test name="Scrolling">
+     <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="util.Scrolling"/>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->

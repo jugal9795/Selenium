@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Scrolling(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="util.Scrolling">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- util.Scrolling -->
+    </classes>
+  </test> <!-- Scrolling(failed) -->
+  <test name="dependsOnExample1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="day8.DependsExample">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="f3"/>
+          <include name="f2"/>
+          <include name="f1"/>
+        </methods>
+      </class> <!-- day8.DependsExample -->
+    </classes>
+  </test> <!-- dependsOnExample1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
